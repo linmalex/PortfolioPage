@@ -11,15 +11,17 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col">
-                <nav class="my-navbar navbar container-fluid">
-                    <button>Test Button</button>
+                <nav class="my-navbar navbar fixed-top container-fluid">
+                    <div class="container my-img-container">
+                        <img class="my-logo" src="~/Images/lindsay alexander-logo-white.png" />
+                    </div>
+                    <button class="my-btn btn">Test Button</button>
+                    <button class="my-btn btn">Test Button</button>
+                    <button class="my-btn btn">Test Button</button>
                 </nav>
-            </div>
         </div>
     </div>
-    
-    
+
     <div class="container body-content">
         @RenderBody()
     </div>

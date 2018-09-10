@@ -24,10 +24,48 @@ textarea {
     max-width: 280px;
 }
 /*//End MVC provided content*/
+body {
+    background-color: #1F0023;
+}
 
 .my-navbar {
     background-color: #29022E;
     opacity: .8;
     display: flex;
+    position: absolute;
     justify-content: flex-end;
+    z-index: 3;
+}
+
+.my-btn {
+    background-color: white;
+    color: #1F0023;
+    margin-left: 1%;
+    display: inline-flex;
+}
+
+.my-logo{
+    max-height: 15%;
+    max-width: 15%;
+    display: inline-flex
+}
+
+.my-light-container{
+    background-color: #42014B;
+}
+
+.my-dark-container {
+    background-color: #10811B;
+}
+
+.my-big-content-box{
+    margin-top: 8%;
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+}
+
+.my-placeholder{
+    height: auto;
+    width: auto;
 }
