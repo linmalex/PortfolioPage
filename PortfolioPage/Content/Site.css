@@ -67,3 +67,25 @@ body {
     max-height: 100%;
     display: inline-flex
 }
+
+.my-body-content{
+    margin-top: 128px;
+}
+
+.my-dark-container, .my-light-container{
+    display: inline-flex;
+}
+
+.my-dark-container{
+    background-color: #10811B;
+}
+
+.my-light-container{
+
+}
+
+.my-content-square{
+    height: 50px;
+    width: 50px;
+    background-color: #463429;
+}
