@@ -1,4 +1,4 @@
-﻿/*//MVC provided content*/
+﻿﻿ /*//MVC provided content*/
 body {
     padding-top: 50px;
     padding-bottom: 20px;
@@ -31,41 +31,39 @@ body {
 .my-navbar {
     background-color: #29022E;
     opacity: .8;
-    display: flex;
     position: absolute;
+    z-index: 1;   
+    display: flex;
+    height: 128px;
+}
+
+.my-logo-container{
+    width: 60%;
+    max-width: 60%;
+}
+
+.my-btn-grp-container {
+    width: 40%;
     justify-content: flex-end;
-    z-index: 3;
+}
+
+.my-logo-container, .my-btn-group-container{
+    display: inline-block;
+}
+
+.my-btn-grp{
+    text-align: right;
 }
 
 .my-btn {
     background-color: white;
     color: #1F0023;
-    margin-left: 1%;
     display: inline-flex;
+    margin-top: 45px;
+    margin-bottom: 45px;
 }
 
-.my-logo{
-    max-height: 15%;
-    max-width: 15%;
+.my-logo {
+    max-height: 100%;
     display: inline-flex
-}
-
-.my-light-container{
-    background-color: #42014B;
-}
-
-.my-dark-container {
-    background-color: #10811B;
-}
-
-.my-big-content-box{
-    margin-top: 8%;
-    display: flex;
-    justify-content: center;
-    height: 80vh;
-}
-
-.my-placeholder{
-    height: auto;
-    width: auto;
 }
