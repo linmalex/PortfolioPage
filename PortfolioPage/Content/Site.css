@@ -94,6 +94,7 @@ margin-top: 1vh;
 .my-dark-container, .my-light-container{
     height: 50%;
     width: 50%;
+    display: inline-block;
 }
 
 .my-dark-container {
