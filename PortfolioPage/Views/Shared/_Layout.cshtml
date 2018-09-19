@@ -12,17 +12,17 @@
     <div class="my-navbar container-fluid">
         <div class="my-logo-container col-4"><img class="my-logo" src="~/Images/lindsay alexander-logo-white.png" /></div>
         <div class="my-btn-grp col-8">
-            <button class="my-btn btn">Test Button 1</button>
+            <button class="my-btn btn" onclick="showContact()">Contact Me</button>
             <button class="my-btn btn">Test Button 2</button>
             <button class="my-btn btn">Test Button 3</button>
         </div>
     </div>
 
-    <div class="container body-content">
-        @RenderBody()
-    </div>
+    @RenderBody()
 
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
+
+  
 </body>
 </html>
