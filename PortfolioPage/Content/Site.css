@@ -1,4 +1,4 @@
-﻿﻿ /*//MVC provided content*/
+﻿﻿﻿ /*//MVC provided content*/
 body {
     padding-top: 50px;
     padding-bottom: 20px;
@@ -9,10 +9,10 @@ body {
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
+    /*padding-left: 15px;
     padding-right: 15px;
     height: 100%;
-    width: 100%;
+    width: 100%*/;
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -31,9 +31,10 @@ textarea {
 /*//End MVC provided content*/
 body, html {
     background-color: #463249;
-    height: 100%;
+    /*height: 100%;*/
     display: flex;
     align-content: space-around;
+    width: 100vw;
 }
 
 /*Navbar area*/
@@ -44,20 +45,20 @@ body, html {
     z-index: 0;
     display: inline-flex;
     height: 10vh;
-    justify-content: flex-end;  
+    justify-content: flex-end;
 }
 
 .my-logo-container, .my-btn-group-container {
     display: inline-flex;
 }
 
-.my-logo-container{
+.my-logo-container {
 }
 
 .my-logo {
-height: 10vh;
-width: auto;
-margin-top: 1vh;
+    height: 10vh;
+    width: auto;
+    margin-top: 1vh;
 }
 
 .my-btn-grp {
@@ -80,36 +81,31 @@ margin-top: 1vh;
 /*End navbar area*/
 
 /*structure and layout*/
-.colorbox-container{
+.colorbox-container {
     border: solid 2px black;
     height: 80vh;
     width: 90vw;
     margin-top: 15vh;
-    margin-left: 5vh;
     display: inline-flex;
-    flex-direction: row; 
+    flex-direction: row;
     flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.my-dark-container, .my-light-container{
-    height: 50%;
-    width: 50%;
+.meAndCharlie {
+    margin-left: 4%;
+    height: 200px;
+    width: auto;
+    display: inline-block;
+    flex: 0 1 0;
+}
+
+p {
     display: inline-block;
 }
 
-.my-dark-container {
-    background-color: #1F0023;
+.jumbo-container {
+    display: flex;
+    flex-wrap: wrap;
 }
-
-.my-light-container {
-    background-color: #8F4E9D;
-}
-
-.my-content-box {
-    background-color: #463249;
-    height: 90%;
-    width: 90%;
-    margin-left: 5%;
-}
-
-
