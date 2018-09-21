@@ -93,14 +93,6 @@ body, html {
     margin-right: auto;
 }
 
-.meAndCharlie {
-    margin-left: 4%;
-    height: 200px;
-    width: auto;
-    display: inline-block;
-    flex: 0 1 0;
-}
-
 p {
     display: inline-block;
 }
