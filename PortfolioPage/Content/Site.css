@@ -83,6 +83,7 @@ body, html {
 /*structure and layout*/
 .colorbox-container {
     border: solid 2px black;
+    background-color: #7E6782;
     height: 80vh;
     width: 90vw;
     margin-top: 15vh;
@@ -93,8 +94,9 @@ body, html {
     margin-right: auto;
 }
 
-p {
+p, h1 {
     display: inline-block;
+    color: white;
 }
 
 .jumbo-container {

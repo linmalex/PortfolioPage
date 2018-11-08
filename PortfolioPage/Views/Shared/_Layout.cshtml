@@ -12,15 +12,30 @@
     <div class="my-navbar container-fluid">
         <div class="my-logo-container col-4"><img class="my-logo" src="~/Images/lindsay alexander-logo-white.png" /></div>
         <div class="my-btn-grp col-8">
-            <button class="my-btn btn">Test Button 1</button>
-            <button class="my-btn btn">Test Button 2</button>
+            <button class="my-btn btn" id="aboutMe" onclick="showAboutMe()">About Me</button>
+            <button class="my-btn btn" id="contactMe" onclick="showContactMe()">Get In Touch</button>
             <button class="my-btn btn">Test Button 3</button>
         </div>
     </div>
+    ﻿<div id="jumboContainer" class="jumbotron jumbotron-fluid colorbox-container rounded">
+    <p>placeholder studfff and adfljkasf</p>
+    </div>
 
-        @RenderBody()
+    @RenderBody()
 
     @Scripts.Render("~/bundles/jquery")
     @RenderSection("scripts", required: false)
+
+    <script>
+        var about = '@Url.Action("About", "Home")';
+        $('#aboutMe').click(function() {
+            $('#jumboContainer').load(about);
+        })
+
+        var contact = '@Url.Action("ContactMe","Home")';
+        $('#contactMe').click(function () {
+            $('#jumboContainer').load(contact);
+        })
+    </script>
 </body>
 </html>

@@ -15,9 +15,12 @@ namespace PortfolioPage.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            return PartialView("About");
+        }
 
-            return View();
+        public ActionResult ContactMe()
+        {
+            return PartialView("ContactMe");
         }
 
         public ActionResult Contact()
