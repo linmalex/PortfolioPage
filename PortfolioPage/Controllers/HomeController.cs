@@ -15,12 +15,12 @@ namespace PortfolioPage.Controllers
 
         public ActionResult About()
         {
-            return PartialView("_About");
+            return PartialView("About");
         }
 
         public ActionResult ContactMe()
         {
-            return PartialView("_ContactMe");
+            return PartialView("ContactMe");
         }
 
         public ActionResult Contact()
