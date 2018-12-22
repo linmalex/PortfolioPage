@@ -17,26 +17,17 @@
     </environment>
 </head>
 <body>
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a asp-page="/Index" class="navbar-brand">PersonalRazorPage</a>
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li><a asp-page="/Index">Home</a></li>
-                    <li><a asp-page="/About">About</a></li>
-                    <li><a asp-page="/Contact">Contact</a></li>
-                </ul>
-            </div>
+    <div class="my-navbar container-fluid">
+        <div class="my-logo-container col-4"><img class="my-logo" src="~/Images/lindsay alexander-logo-white.png" /></div>
+        <div class="my-btn-grp col-8">
+            <button class="my-btn btn" id="aboutMe" onclick="showAboutMe()">About Me</button>
+            <button class="my-btn btn" id="contactMe" onclick="showContactMe()">Get In Touch</button>
+            <button class="my-btn btn">Test Button 3</button>
         </div>
-    </nav>
+    </div>
+    ﻿<div id="jumboContainer" class="jumbotron jumbotron-fluid colorbox-container rounded">
+        <p>placeholder studfff and adfljkasf</p>
+    </div>
 
     <partial name="_CookieConsentPartial" />
 
@@ -70,5 +61,17 @@
     </environment>
 
     @RenderSection("Scripts", required: false)
+    <script>
+        var about = '@Url.Action("About", "Home")';
+        $('#aboutMe').click(function() {
+            $('#jumboContainer').load(about);
+        })
+
+        var contact = '@Url.Action("ContactMe","Home")';
+        $('#contactMe').click(function () {
+            $('#jumboContainer').load(contact);
+        })
+    </script>
+
 </body>
 </html>
